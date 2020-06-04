@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360B9A59B3C65DA116CC0684 /* Pods_VideoDetect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C0FDFCFA5787F65D7EBA6D /* Pods_VideoDetect.framework */; };
+		C001EAFE24862A8800BB07ED /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001EAFD24862A8800BB07ED /* VisionViewController.swift */; };
+		C001EB0024863D1500BB07ED /* UIDeviceOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001EAFF24863D1500BB07ED /* UIDeviceOrientation+Extension.swift */; };
+		C001EB022486609500BB07ED /* VisionViewController+DrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001EB012486609500BB07ED /* VisionViewController+DrawLayer.swift */; };
+		C044555D2487AEAF003BB6C6 /* DroneConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */; };
+		C061DCF82488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */; };
+		C08140242483980B005A0501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08140232483980B005A0501 /* AppDelegate.swift */; };
+		C08140282483980B005A0501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08140272483980B005A0501 /* ViewController.swift */; };
+		C081402B2483980B005A0501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08140292483980B005A0501 /* Main.storyboard */; };
+		C081402D2483980D005A0501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C081402C2483980D005A0501 /* Assets.xcassets */; };
+		C08140302483980D005A0501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C081402E2483980D005A0501 /* LaunchScreen.storyboard */; };
+		C08A8A7E2484846800BEB681 /* AVFoundationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A8A7D2484846800BEB681 /* AVFoundationViewController.swift */; };
+		C091C885248895B20017217D /* DJIVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C884248895B20017217D /* DJIVideoViewController.swift */; };
+		C091C887248899080017217D /* VideoFrameYUV+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C886248899080017217D /* VideoFrameYUV+Extension.swift */; };
+		C091C88924889C3F0017217D /* DJIVideoViewController+Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */; };
+		C091C88B24889CD70017217D /* DJIVideoController+DrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C0FDFCFA5787F65D7EBA6D /* Pods_VideoDetect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoDetect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098572A11B6F12F55CC48226 /* Pods-VideoDetect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDetect.release.xcconfig"; path = "Target Support Files/Pods-VideoDetect/Pods-VideoDetect.release.xcconfig"; sourceTree = "<group>"; };
+		B2A88B9AB555160364918CAC /* Pods-VideoDetect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoDetect.debug.xcconfig"; path = "Target Support Files/Pods-VideoDetect/Pods-VideoDetect.debug.xcconfig"; sourceTree = "<group>"; };
+		C001EAFD24862A8800BB07ED /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		C001EAFF24863D1500BB07ED /* UIDeviceOrientation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDeviceOrientation+Extension.swift"; sourceTree = "<group>"; };
+		C001EB012486609500BB07ED /* VisionViewController+DrawLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VisionViewController+DrawLayer.swift"; sourceTree = "<group>"; };
+		C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneConnectionManager.swift; sourceTree = "<group>"; };
+		C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJICameraVideoResolution+Extension.swift"; sourceTree = "<group>"; };
+		C08140202483980B005A0501 /* VideoDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08140232483980B005A0501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C08140272483980B005A0501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C081402A2483980B005A0501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C081402C2483980D005A0501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C081402F2483980D005A0501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C08140312483980D005A0501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C08A8A7B2484824000BEB681 /* VideoToolboxH264Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoToolboxH264Encoder.swift; sourceTree = "<group>"; };
+		C08A8A7D2484846800BEB681 /* AVFoundationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationViewController.swift; sourceTree = "<group>"; };
+		C091C884248895B20017217D /* DJIVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIVideoViewController.swift; sourceTree = "<group>"; };
+		C091C886248899080017217D /* VideoFrameYUV+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoFrameYUV+Extension.swift"; sourceTree = "<group>"; };
+		C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIVideoViewController+Vision.swift"; sourceTree = "<group>"; };
+		C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIVideoController+DrawLayer.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C081401D2483980B005A0501 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360B9A59B3C65DA116CC0684 /* Pods_VideoDetect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61F2A2A9643681EFFB497E68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C0FDFCFA5787F65D7EBA6D /* Pods_VideoDetect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E5D9A57DBC8FA2C2891C6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2A88B9AB555160364918CAC /* Pods-VideoDetect.debug.xcconfig */,
+				098572A11B6F12F55CC48226 /* Pods-VideoDetect.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C08140172483980B005A0501 = {
+			isa = PBXGroup;
+			children = (
+				C08140222483980B005A0501 /* VideoDetect */,
+				C08140212483980B005A0501 /* Products */,
+				83E5D9A57DBC8FA2C2891C6C /* Pods */,
+				61F2A2A9643681EFFB497E68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C08140212483980B005A0501 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C08140202483980B005A0501 /* VideoDetect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C08140222483980B005A0501 /* VideoDetect */ = {
+			isa = PBXGroup;
+			children = (
+				C08A8A7A248481DA00BEB681 /* Helper */,
+				C091C881248894080017217D /* AVFoundation */,
+				C091C882248894120017217D /* Vision */,
+				C091C883248894460017217D /* Drone */,
+				C08140232483980B005A0501 /* AppDelegate.swift */,
+				C08140272483980B005A0501 /* ViewController.swift */,
+				C08140292483980B005A0501 /* Main.storyboard */,
+				C081402C2483980D005A0501 /* Assets.xcassets */,
+				C081402E2483980D005A0501 /* LaunchScreen.storyboard */,
+				C08140312483980D005A0501 /* Info.plist */,
+			);
+			path = VideoDetect;
+			sourceTree = "<group>";
+		};
+		C08A8A7A248481DA00BEB681 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C08A8A7B2484824000BEB681 /* VideoToolboxH264Encoder.swift */,
+				C001EAFF24863D1500BB07ED /* UIDeviceOrientation+Extension.swift */,
+				C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */,
+				C091C886248899080017217D /* VideoFrameYUV+Extension.swift */,
+				C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C091C881248894080017217D /* AVFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				C08A8A7D2484846800BEB681 /* AVFoundationViewController.swift */,
+			);
+			path = AVFoundation;
+			sourceTree = "<group>";
+		};
+		C091C882248894120017217D /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				C001EAFD24862A8800BB07ED /* VisionViewController.swift */,
+				C001EB012486609500BB07ED /* VisionViewController+DrawLayer.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+		C091C883248894460017217D /* Drone */ = {
+			isa = PBXGroup;
+			children = (
+				C091C884248895B20017217D /* DJIVideoViewController.swift */,
+				C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */,
+				C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */,
+			);
+			path = Drone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C081401F2483980B005A0501 /* VideoDetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C08140342483980D005A0501 /* Build configuration list for PBXNativeTarget "VideoDetect" */;
+			buildPhases = (
+				733264387397651785D9A4A0 /* [CP] Check Pods Manifest.lock */,
+				C081401C2483980B005A0501 /* Sources */,
+				C081401D2483980B005A0501 /* Frameworks */,
+				C081401E2483980B005A0501 /* Resources */,
+				1674E51A9271476A9C7C5900 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoDetect;
+			productName = VideoDetect;
+			productReference = C08140202483980B005A0501 /* VideoDetect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C08140182483980B005A0501 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Hanson;
+				TargetAttributes = {
+					C081401F2483980B005A0501 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = C081401B2483980B005A0501 /* Build configuration list for PBXProject "VideoDetect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C08140172483980B005A0501;
+			productRefGroup = C08140212483980B005A0501 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C081401F2483980B005A0501 /* VideoDetect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C081401E2483980B005A0501 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08140302483980D005A0501 /* LaunchScreen.storyboard in Resources */,
+				C081402D2483980D005A0501 /* Assets.xcassets in Resources */,
+				C081402B2483980B005A0501 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1674E51A9271476A9C7C5900 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoDetect/Pods-VideoDetect-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoDetect/Pods-VideoDetect-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoDetect/Pods-VideoDetect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		733264387397651785D9A4A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoDetect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C081401C2483980B005A0501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C001EB022486609500BB07ED /* VisionViewController+DrawLayer.swift in Sources */,
+				C091C88B24889CD70017217D /* DJIVideoController+DrawLayer.swift in Sources */,
+				C001EB0024863D1500BB07ED /* UIDeviceOrientation+Extension.swift in Sources */,
+				C091C887248899080017217D /* VideoFrameYUV+Extension.swift in Sources */,
+				C044555D2487AEAF003BB6C6 /* DroneConnectionManager.swift in Sources */,
+				C08140282483980B005A0501 /* ViewController.swift in Sources */,
+				C091C88924889C3F0017217D /* DJIVideoViewController+Vision.swift in Sources */,
+				C08A8A7E2484846800BEB681 /* AVFoundationViewController.swift in Sources */,
+				C091C885248895B20017217D /* DJIVideoViewController.swift in Sources */,
+				C061DCF82488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift in Sources */,
+				C001EAFE24862A8800BB07ED /* VisionViewController.swift in Sources */,
+				C08140242483980B005A0501 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C08140292483980B005A0501 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C081402A2483980B005A0501 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C081402E2483980D005A0501 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C081402F2483980D005A0501 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C08140322483980D005A0501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C08140332483980D005A0501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C08140352483980D005A0501 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2A88B9AB555160364918CAC /* Pods-VideoDetect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = VideoDetect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanson.VideoDetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C08140362483980D005A0501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098572A11B6F12F55CC48226 /* Pods-VideoDetect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XC238MH24L;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = VideoDetect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hanson.VideoDetect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C081401B2483980B005A0501 /* Build configuration list for PBXProject "VideoDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08140322483980D005A0501 /* Debug */,
+				C08140332483980D005A0501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C08140342483980D005A0501 /* Build configuration list for PBXNativeTarget "VideoDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C08140352483980D005A0501 /* Debug */,
+				C08140362483980D005A0501 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C08140182483980B005A0501 /* Project object */;
+}

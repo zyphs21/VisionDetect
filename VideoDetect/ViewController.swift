@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         DJISDKManager.userAccountManager().logIntoDJIUserAccount(withAuthorizationRequired: true) { (userAccountState, error) in
             if let error = error {
                 print("Login error: " + error.localizedDescription)
-                UIApplication.showAlert(message: "Login error: " + error.localizedDescription)
+                Helper.showAlert(message: "Login error: " + error.localizedDescription)
             } else {
                 print("Login Success")
             }

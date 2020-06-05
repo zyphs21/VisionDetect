@@ -90,7 +90,7 @@ extension VisionViewController {
             scaleY = videoPreviewRect.height / captureDeviceResolution.height
         }
         
-        let affineTransform = CGAffineTransform(rotationAngle: radiansForDegrees(rotation)).scaledBy(x: scaleX, y: -scaleY)
+        let affineTransform = CGAffineTransform(rotationAngle: Helper.radiansForDegrees(rotation)).scaledBy(x: scaleX, y: -scaleY)
         detectionOverlayLayer.setAffineTransform(affineTransform)
         
         let rootLayerBounds = rootLayer.bounds
@@ -145,10 +145,5 @@ extension VisionViewController {
                 path.closeSubpath()
             }
         }
-    }
-    
-    // 角度转弧度
-    func radiansForDegrees(_ degrees: CGFloat) -> CGFloat {
-        return CGFloat(Double(degrees) * Double.pi / 180.0)
     }
 }

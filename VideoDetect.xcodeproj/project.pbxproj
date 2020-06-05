@@ -13,6 +13,7 @@
 		C001EB022486609500BB07ED /* VisionViewController+DrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001EB012486609500BB07ED /* VisionViewController+DrawLayer.swift */; };
 		C044555D2487AEAF003BB6C6 /* DroneConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */; };
 		C061DCF82488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */; };
+		C061DCFC248A344300C50D37 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C061DCFB248A344300C50D37 /* Helper.swift */; };
 		C08140242483980B005A0501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08140232483980B005A0501 /* AppDelegate.swift */; };
 		C08140282483980B005A0501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08140272483980B005A0501 /* ViewController.swift */; };
 		C081402B2483980B005A0501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08140292483980B005A0501 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		C001EB012486609500BB07ED /* VisionViewController+DrawLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VisionViewController+DrawLayer.swift"; sourceTree = "<group>"; };
 		C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneConnectionManager.swift; sourceTree = "<group>"; };
 		C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJICameraVideoResolution+Extension.swift"; sourceTree = "<group>"; };
+		C061DCFB248A344300C50D37 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		C08140202483980B005A0501 /* VideoDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08140232483980B005A0501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08140272483980B005A0501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				C044555C2487AEAF003BB6C6 /* DroneConnectionManager.swift */,
 				C091C886248899080017217D /* VideoFrameYUV+Extension.swift */,
 				C061DCF72488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift */,
+				C061DCFB248A344300C50D37 /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				C08A8A7E2484846800BEB681 /* AVFoundationViewController.swift in Sources */,
 				C091C885248895B20017217D /* DJIVideoViewController.swift in Sources */,
 				C061DCF82488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift in Sources */,
+				C061DCFC248A344300C50D37 /* Helper.swift in Sources */,
 				C001EAFE24862A8800BB07ED /* VisionViewController.swift in Sources */,
 				C08140242483980B005A0501 /* AppDelegate.swift in Sources */,
 			);

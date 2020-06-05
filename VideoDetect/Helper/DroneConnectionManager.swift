@@ -21,7 +21,7 @@ class DroneConnectionManger: NSObject {
     func registerApp() {
         let appKey = Bundle.main.object(forInfoDictionaryKey: SDK_APP_KEY_INFO_PLIST_KEY) as? String
         guard let appKeys = appKey, !appKeys.isEmpty else {
-            UIApplication.showAlert(message: "Please enter your app key in the info.plist")
+            Helper.showAlert(message: "Please enter your app key in the info.plist")
             return
         }
         DJISDKManager.registerApp(with: self)
@@ -32,7 +32,7 @@ extension DroneConnectionManger: DJISDKManagerDelegate {
 
     func appRegisteredWithError(_ error: Error?) {
         if let error = error {
-            UIApplication.showAlert(message: "SDK Registered with error \(error.localizedDescription)")
+            Helper.showAlert(message: "SDK Registered with error \(error.localizedDescription)")
         } else {
             if enableBridgeMode {
                 print("SDK Registered success,startConnectionToProduct with bridgeMode")
@@ -49,7 +49,7 @@ extension DroneConnectionManger: DJISDKManagerDelegate {
     }
     
     func productDisconnected() {
-        UIApplication.showAlert(message: "productDisconnected")
+        Helper.showAlert(message: "productDisconnected")
     }
     
     func componentConnected(withKey key: String?, andIndex index: Int) {
@@ -102,18 +102,6 @@ extension DJIAppActivationAircraftBindingState {
             return "App Activation is not supported. "
         @unknown default:
             fatalError()
-        }
-    }
-}
-
-extension UIApplication {
-    class func showAlert(title: String = "", message: String = "", on viewController: UIViewController? = nil) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        if let viewController = viewController {
-            viewController.present(alert, animated: true, completion: nil)
-        } else {
-            UIApplication.shared.keyWindow?.rootViewController?.present(alert, animated: true, completion: nil)
         }
     }
 }

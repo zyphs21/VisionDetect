@@ -29,14 +29,12 @@ var cameraCaptureResolution: CameraCaptureResolution = .medium
 class AVFoundationViewController: UIViewController {
     private var captureSession: AVCaptureSession!
     private var previewLayer: AVCaptureVideoPreviewLayer!
-    private lazy var encoder = VideoToolboxH264Encoder()
     
     private var detectedViews = [UIView]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCaptureSession()
-        encoder.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,20 +106,5 @@ extension AVFoundationViewController: AVCaptureMetadataOutputObjectsDelegate {
             view.addSubview(detectedView)
             detectedViews.append(detectedView)
         }
-    }
-}
-
-// MARK: - VideoToolboxH264EncoderDelegate
-extension AVFoundationViewController: VideoToolboxH264EncoderDelegate {
-    func handle(spsppsData: Data) {
-        sendData(data: spsppsData as NSData)
-    }
-    
-    func encode(data: Data, isKeyFrame: Bool) {
-        sendData(data: data as NSData)
-    }
-    
-    func sendData(data: NSData) {
-//        let videoBuffer = UnsafeMutablePointer<UInt8>(mutating: data.bytes.bindMemory(to: UInt8.self, capacity: data.length))
     }
 }

@@ -74,26 +74,26 @@ class VisionViewController: UIViewController {
     }
     
     private func setupVisionRequest() {
-        var trackRequests = [VNTrackObjectRequest]()
-        let faceDetectRequest = VNDetectFaceRectanglesRequest { (request, error) in
-            if let error = error {
-                print("---VNDetectFaceRectanglesRequest Error: \(error.localizedDescription)")
-                return
-            }
-            guard let faceDetectRequest = request as? VNDetectFaceRectanglesRequest
-                , let results = faceDetectRequest.results as? [VNFaceObservation] else { return }
-            
-            DispatchQueue.main.async {
-                // 添加检测结果到跟踪数组
-                for observation in results {
-                    let faceTrackingRequest = VNTrackObjectRequest(detectedObjectObservation: observation)
-                    trackRequests.append(faceTrackingRequest)
-                }
-                self.trackingRequests = trackRequests
-            }
-        }
+        let faceDetectRequest = VNDetectFaceRectanglesRequest(completionHandler: faceRectanglesRequestCompleteAction)
         faceDetectRequests = [faceDetectRequest]
-        sequenceRequestHandler = VNSequenceRequestHandler()
+    }
+    
+    private func faceRectanglesRequestCompleteAction(request: VNRequest, error: Error?) {
+        trackingRequests.removeAll()
+        
+        if let error = error {
+            print("---VNDetectFaceRectanglesRequest Error: \(error.localizedDescription)")
+            return
+        }
+        
+        guard let faceDetectRequest = request as? VNDetectFaceRectanglesRequest
+            , let results = faceDetectRequest.results as? [VNFaceObservation] else { return }
+        
+        // 添加检测结果到跟踪数组
+        for observation in results {
+            let faceTrackingRequest = VNTrackObjectRequest(detectedObjectObservation: observation)
+            trackingRequests.append(faceTrackingRequest)
+        }
     }
     
     private func performImageRequestHandler(requests: [VNImageBasedRequest],

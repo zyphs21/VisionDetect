@@ -51,7 +51,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="z5Q-OV-CZB" kind="show" id="kqc-28-jzw"/>
+                                            <segue destination="z5Q-OV-CZB" kind="presentation" id="o2x-Jv-Av7"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -213,22 +213,32 @@
         <!--Video View Controller-->
         <scene sceneID="dyC-NG-PB1">
             <objects>
-                <viewController id="z5Q-OV-CZB" customClass="DJIVideoViewController" customModule="VideoDetect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="z5Q-OV-CZB" customClass="DJIVideoViewController" customModule="VideoDetect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQm-2L-BBb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7T-Sv-LiE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUs-KS-xBW">
+                                <rect key="frame" x="20" y="64" width="44" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close:" destination="z5Q-OV-CZB" eventType="touchUpInside" id="Cu6-Gq-QXs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xLb-AU-aTi" firstAttribute="trailing" secondItem="G7T-Sv-LiE" secondAttribute="trailing" id="WO5-h2-S8M"/>
                             <constraint firstItem="G7T-Sv-LiE" firstAttribute="leading" secondItem="xLb-AU-aTi" secondAttribute="leading" id="fNm-Ej-Sqz"/>
                             <constraint firstItem="G7T-Sv-LiE" firstAttribute="top" secondItem="xLb-AU-aTi" secondAttribute="top" id="hC3-AI-btv"/>
+                            <constraint firstItem="ZUs-KS-xBW" firstAttribute="top" secondItem="xLb-AU-aTi" secondAttribute="top" constant="20" id="jcm-1V-Wxa"/>
                             <constraint firstItem="xLb-AU-aTi" firstAttribute="bottom" secondItem="G7T-Sv-LiE" secondAttribute="bottom" id="tVN-o5-9v0"/>
+                            <constraint firstItem="ZUs-KS-xBW" firstAttribute="leading" secondItem="xLb-AU-aTi" secondAttribute="leading" constant="20" id="wjy-0n-Ic6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xLb-AU-aTi"/>
                     </view>
@@ -273,10 +283,10 @@
             </objects>
             <point key="canvasLocation" x="2619" y="-174"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="fo9-xt-nVR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qac-8q-TzG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qac-8q-TzG" customClass="BaseNavigationController" customModule="VideoDetect" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z1T-hb-v9E">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

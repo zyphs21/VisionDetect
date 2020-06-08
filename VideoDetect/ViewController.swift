@@ -9,6 +9,12 @@
 import UIKit
 import DJISDK
 
+class BaseNavigationController: UINavigationController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return [.portrait]
+    }
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var activationStateLabel: UILabel!

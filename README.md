@@ -7,7 +7,7 @@ Vision 是 iOS 上一个机器视觉的框架，它可以对图片和视频进�
 
 ![](https://cdn.jsdelivr.net/gh/zyphs21/VisionDetect/detectFace.gif)
 
-<img src="https://cdn.jsdelivr.net/gh/zyphs21/VisionDetect/face.jpg" width = "450" height = "320" alt="" align=center />
+<img src="https://cdn.jsdelivr.net/gh/zyphs21/VisionDetect/face.jpg" width = "544" height = "320" alt="" align=center />
 
 ## 一、获取无人机图传视频流
 

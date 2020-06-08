@@ -14,8 +14,8 @@ extension VideoFrameYUV {
         print("---creatPixel: \(self.width), \(self.height)")
         let _: CVReturn = CVPixelBufferCreate(kCFAllocatorDefault, Int(self.width), Int(self.height), kCVPixelFormatType_420YpCbCr8Planar, nil, &initialPixelBuffer)
         
-        guard let pixelBuffer = initialPixelBuffer,
-            CVPixelBufferLockBaseAddress(pixelBuffer, []) == kCVReturnSuccess
+        guard let pixelBuffer = initialPixelBuffer
+            , CVPixelBufferLockBaseAddress(pixelBuffer, []) == kCVReturnSuccess
             else {
                 return nil
         }

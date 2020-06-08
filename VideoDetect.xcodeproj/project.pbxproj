@@ -22,7 +22,6 @@
 		C08A8A7E2484846800BEB681 /* AVFoundationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A8A7D2484846800BEB681 /* AVFoundationViewController.swift */; };
 		C091C885248895B20017217D /* DJIVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C884248895B20017217D /* DJIVideoViewController.swift */; };
 		C091C887248899080017217D /* VideoFrameYUV+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C886248899080017217D /* VideoFrameYUV+Extension.swift */; };
-		C091C88924889C3F0017217D /* DJIVideoViewController+Vision.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */; };
 		C091C88B24889CD70017217D /* DJIVideoController+DrawLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +46,6 @@
 		C08A8A7D2484846800BEB681 /* AVFoundationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVFoundationViewController.swift; sourceTree = "<group>"; };
 		C091C884248895B20017217D /* DJIVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJIVideoViewController.swift; sourceTree = "<group>"; };
 		C091C886248899080017217D /* VideoFrameYUV+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoFrameYUV+Extension.swift"; sourceTree = "<group>"; };
-		C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIVideoViewController+Vision.swift"; sourceTree = "<group>"; };
 		C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DJIVideoController+DrawLayer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				C091C884248895B20017217D /* DJIVideoViewController.swift */,
-				C091C88824889C3F0017217D /* DJIVideoViewController+Vision.swift */,
 				C091C88A24889CD70017217D /* DJIVideoController+DrawLayer.swift */,
 			);
 			path = Drone;
@@ -276,7 +273,6 @@
 				C091C887248899080017217D /* VideoFrameYUV+Extension.swift in Sources */,
 				C044555D2487AEAF003BB6C6 /* DroneConnectionManager.swift in Sources */,
 				C08140282483980B005A0501 /* ViewController.swift in Sources */,
-				C091C88924889C3F0017217D /* DJIVideoViewController+Vision.swift in Sources */,
 				C08A8A7E2484846800BEB681 /* AVFoundationViewController.swift in Sources */,
 				C091C885248895B20017217D /* DJIVideoViewController.swift in Sources */,
 				C061DCF82488D00C00C50D37 /* DJICameraVideoResolution+Extension.swift in Sources */,
